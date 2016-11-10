@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to my blog</title>
+  <meta charset="utf-8">
+  <link href="{% static 'css/index.css' %}" rel="stylesheet">
+  <!--<link href="index.css" rel="stylesheet">-->
+  <!--网页关键字-->
+  <meta name="keywords" content="汤建明的个人博客"/>
+  <!--网页描述-->
+  <meta name="description" content="一个富有活力的技术学习博客网站"/>
+  <!--本页作者-->
+  <meta name="author" content="Dang" />
+  <!--版权声明-->
+  <meta name="copyright" content="本站所有博客均为原创，版权所有，禁止转载。否则将追究法律责任。"/>
+</head>
+
+<!--<body background="{% static 'images/index-background.jpg' %}">-->
+<body>
+<!--上部-->
+<div id="header" >
+  <nav id="topnav" class="f_r">
+    <ul>
+      <a href="/">home</a>
+      <a href="/blog/" target="_blank">blog</a>
+      <a href="#aboutme">ablout me</a>
+      <a href="#concat">contact</a>
+    </ul>
+  </nav>
+</div>
+
+<!--中间部分-->
+<div id="middle">
+
+  <!--关于我-->
+  <div id="aboutme" background="{% static 'images/index-background.jpg' %}">
+    ABOUT ME
+    <br />
+    <div id="aboutme-words">
+      I am a Operations Engineer based in Chengdu, China. In my free time, I am excited to explore anything I am interested or related to my work. They can always help me to improve myself, open my eyes and get ready to the near future.
+    </div>
+    <div>
+      <p>I am study html/css now. I hope i can do my blog from scratch by myself!</p>
+      <p>keep moving...</p>
+    </div>
+  </div>
+
+  <!--工作-->
+  <div id="work">
+    WORK 
+    <div id="logo-centos"><img src="{% static 'images/logo-centos.jpg' %}" class='avatar avatar-32 photo' height='32' width='32' /></div>
+    <div id="logo-mysql"><img src="{% static 'images/logo-mysql.jpg' %}" class='avatar avatar-32 photo' height='32' width='52' /></div>
+    <div id="logo-nginx"><img src="{% static 'images/logo-nginx.png' %}" class='avatar avatar-32 photo' height='32' width='52' /></div>
+    <div id="logo-redis"><img src="{% static 'images/logo-redis.png' %}" class='avatar avatar-32 photo' height='32' width='52' /></div>
+    <div id="logo-zabbix"><img src="{% static 'images/logo-zabbix.png' %}" class='avatar avatar-32 photo' height='32' width='52' /></div>
+    <!--<div id=""><img src="{% static 'images/' %}" class='avatar avatar-32 photo' height='32' width='52' /></div>-->
+    <p>Shell Saltstack</p>
+  </div>
+
+  <!--学习-->
+  <div id="study">
+    <p>study</p>
+  </div>
+
+
+  <!--联系-->
+  <div id="concat">
+  CONCAT 
+  </div>
+
+
+
+</div>
+
+
+
+<!--底部-->
+<div id="footer">
+    <p class="ft-copyright">Personal blog of Dang</p>
+    <p class="ft-copyright">Powered by Dang in 2016</p>
+    <div id="tbox"> <a id="togbook" href="/"></a> <a id="gotop" href="javascript:void(0)"></a> </div>
+</div>
+
+
+</body>
+</html>

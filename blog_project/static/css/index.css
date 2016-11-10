@@ -1,0 +1,22 @@
+@charset "gb2312";
+/*头部*/
+#header { width: 1000px; margin: 20px auto; overflow: hidden; clear: both; }
+#topnav { width: 100%; background: #162ADD; height: 46px; line-height: 46px; text-align: left; border-radius: 46px; }
+#topnav ul{ margin-left:50px; }
+#topnav a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
+#topnav a:hover { background: #fff; color: #000; }
+#topnav a { color: #FFF }
+#topnav_current { background: #F3FF41; }
+a#topnav_current { color: #000 }
+
+/*中部*/
+#middle { width: 1000px; margin: 20px auto; overflow: hidden; clear: both; }
+
+
+
+
+
+/*底部*/
+#footer { background: #333; width: 1000px;margin: 20px auto; clear: both; text-align: center; }
+.ft-copyright { color: #fff; line-height: 24px; }
+.ft-list { background: url(../images/ft-wx-s.png) no-repeat right; height: 100px }
