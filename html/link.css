@@ -2,6 +2,19 @@
 #middle {color: blue; font-family: 宋体; }
 #body {width: 1000px; }
 
+
+#head {width: 1000px; margin: 20px auto;}
+#topnav { width: 100%; background: #162ADD; height: 46px; line-height: 46px; text-align: left; border-radius: 46px; }
+#topnav ul{ margin-left:50px; }
+#topnav a { display: inline-block; font-size: 18px; font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif; padding: 0 20px; }
+#topnav a:hover { background: #fff; color: #000; }
+#topnav a { color: #FFF }
+#topnav_current { background: #F3FF41; }
+a#topnav_current { color: #000 }
+
+
+
+
 #official {width: 1000px; margin: 20px auto;}
 #chinese_doc {width: 1000px; margin: 20px auto;}
 #soucang {width: 1000px; margin: 20px auto;}
