@@ -1,3 +1,8 @@
 #up {color: red; font-family: 微软雅黑; }
 #middle {color: blue; font-family: 宋体; }
+#body {width: 1000px; }
 
+#official {width: 1000px; margin: 20px auto;}
+#chinese_doc {width: 1000px; margin: 20px auto;}
+#soucang {width: 1000px; margin: 20px auto;}
+#life {width: 1000px; margin: 20px auto;}
