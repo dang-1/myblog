@@ -34,7 +34,8 @@ def global_setting(request):
     return locals()
 def index(request):
     return render(request, 'index.html', locals())
-
+def link(request):
+    return render(request, 'link.html', locals())
 def blog(request):
     try:
         # 最新文章数据

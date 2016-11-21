@@ -1877,3 +1877,38 @@ TemplateSyntaxError: Invalid filter: 'month_to_upper'
 2016-11-09 22:24:17,580 [Thread-303:140654310999808] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2016-11-09 23:01:01,012 [Thread-340:140654195762944] [django.request:170] [base:get_response] [WARNING]- Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
 2016-11-10 02:05:17,822 [Thread-413:140654310999808] [django.request:170] [base:get_response] [WARNING]- Not Found: /http:/180.163.113.82/check_proxy
+2016-11-21 13:37:28,572 [Thread-9:140673332279040] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-11-21 13:41:00,350 [Thread-20:140673332279040] [django.request:170] [base:get_response] [WARNING]- Not Found: /link/
+2016-11-21 13:41:19,030 [Thread-25:140673321789184] [django.request:170] [base:get_response] [WARNING]- Not Found: /link
+2016-11-21 13:41:20,767 [Thread-26:140673321789184] [django.request:170] [base:get_response] [WARNING]- Not Found: /link
+2016-11-21 13:43:06,111 [Thread-2:140374310156032] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /link/
+Traceback (most recent call last):
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/data/myblog/blog_project/blog/views.py", line 38, in link
+    return render(request, 'link.html', locals())
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/base.py", line 190, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/base.py", line 339, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/root/.pyenv/versions/myblog/lib/python2.7/site-packages/django/template/base.py", line 395, in invalid_block_tag
+    raise self.error(token, "Invalid block tag: '%s'" % command)
+TemplateSyntaxError: Invalid block tag: 'static'
