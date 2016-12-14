@@ -2,43 +2,43 @@
 <!DOCTYPE <!DOCTYPE html>
 <html>
 <head>
-	<title>网址导航</title>
-	<!--<link rel="stylesheet" type="text/css" href="link.css">-->
+    <title>网址导航</title>
+    <!--<link rel="stylesheet" type="text/css" href="link.css">-->
     <link href="{% static 'css/link.css' %}" rel="stylesheet">
-	<meta charset="utf-8">
-	<!--<script type="text/javascript">
-		var a;
-		function send()
-		{
-			a="a";
-			var b="个人收藏链接";
-			alert(a+b);
-		}
-		send();
-	</script>-->
+    <meta charset="utf-8">
+    <!--<script type="text/javascript">
+        var a;
+        function send()
+        {
+            a="a";
+            var b="个人收藏链接";
+            alert(a+b);
+        }
+        send();
+    </script>-->
 </head>
 <body>
-	<div id="head">
-		<nav id="topnav" class="f_r">
-    		<ul>
-      			<a href="/">home</a>
-      			<a href="/blog/" target="_blank">blog</a>
-      			<a href="#officaial">official doc</a>
-      			<a href="#chinese_doc">chinese doc</a>
-      			<a href="#life">life</a>
-    		</ul>
-  		</nav>
-	</div>
+    <div id="head">
+        <nav id="topnav" class="f_r">
+        <ul>
+        <a href="/">home</a>
+        <a href="/blog/" target="_blank">blog</a>
+        <a href="#officaial">official doc</a>
+        <a href="#chinese_doc">chinese doc</a>
+        <a href="#life">life</a>
+        </ul>
+        </nav>
+    </div>
     <div id="official">
-    	<table>
-    		<caption>以下为官方链接</caption>
-    		<tr>
-    			<th>类型</th>
-    			<th></th>
-    			<th></th>
-    			<th></th>
-    			<th></th>
-    		</tr>
+        <table>
+            <caption>以下为官方链接</caption>
+            <tr>
+                <th>类型</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
     		<tr>
     			<td>日志处理</td>
     			<td><a href="https://www.elastic.co" target="_blank">ELK</a></td>
@@ -87,10 +87,19 @@
     			<td>数据库</td>
     			<td><a href="http://www.mongoing.com/" target="_blank">MongoDB</a></td>
     		</tr>
+                <tr>
+                        <td>容器</td>
+                        <td><a href="http://docker-doc.readthedocs.io/zh_CN/latest/" target="_blank">docker</a></td>
+                </tr>
     		<tr>
     			<td></td>
     			<td></td>
     		</tr>
+                <tr>
+                        <td>python</td>
+                        <td><a href="http://python.usyiyi.cn/" target="_blank">python中文</td>
+                        <td><a href="http://python3-cookbook.readthedocs.io/" target="_blank">COOKBOOK</td>
+                </tr>
     		
 		</table>
 	</div>
@@ -117,11 +126,22 @@
     			<td>网盘</td>
     			<td><a href="http://pan.baidu.com/" target="_blank">百度网盘</a></td>
     		</tr>
-		
+                <tr>
+                       <td>翻译</td>
+                       <td><a href="http://fy.iciba.com/" target="_blank">金山翻译</td>
+	       </tr>
+               <tr>
+                      <td>学习</td>
+                      <td><a href="http://i.apelearn.com/" target="_blank">猿课</a></td>
+               </tr>
 	</div>
 		<div id="life">
 		<p></p>
 		
 		</div>
+                <div id="life">
+                <p></p>
+
+                </div>
 </body>
 </html>
