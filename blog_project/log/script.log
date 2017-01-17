@@ -2182,3 +2182,6 @@ TemplateSyntaxError: Invalid block tag: 'static'
 2017-01-04 05:40:31,100 [Thread-374:140542302246656] [django.request:170] [base:get_response] [WARNING]- Not Found: /http:/www.baidu.com/cache/global/img/gs.gif
 2017-01-04 11:02:43,456 [Thread-381:140542191068928] [django.request:170] [base:get_response] [WARNING]- Not Found: /http:/180.163.113.82/check_proxy
 2017-01-04 13:22:53,083 [Thread-384:140542191068928] [django.request:170] [base:get_response] [WARNING]- Not Found: /http:/szwindoor.com/test/check_proxy.php
+2017-01-17 16:41:41,022 [Thread-10:139734709167872] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-01-17 16:42:53,502 [Thread-25:139734738089728] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-01-17 16:44:15,393 [Thread-55:139734709167872] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
