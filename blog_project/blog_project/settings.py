@@ -122,7 +122,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,  'uploads')
 AUTH_USER_MODEL = 'blog.User'
 
 # 网站的基本信息配置
-SITE_URL = 'http://localhost:8000/'
+SITE_URL = 'http://www.tangjianming.top/'
 SITE_NAME = '汤建明的个人博客'
 SITE_DESC = '专注Python开发，欢迎和大家交流'
 WEIBO_SINA = 'http://weibo.sina.com/yopoing'
