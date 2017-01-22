@@ -2227,3 +2227,4 @@ TemplateSyntaxError: Invalid block tag: 'static'
 2017-01-21 23:03:27,480 [Thread-380:140150956881664] [django.request:170] [base:get_response] [WARNING]- Not Found: /article/portal.php
 2017-01-21 23:03:27,793 [Thread-381:140150956881664] [django.request:170] [base:get_response] [WARNING]- Not Found: /archive/portal.php
 2017-01-22 09:18:38,425 [Thread-389:140150956881664] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2017-01-22 09:26:17,998 [Thread-402:140150956881664] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
